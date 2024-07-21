@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welding Heat Input Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welding Heat Input Calculator</h1>
+        <div class="calculator">
+            <div class="input-section">
+                <input type="number" id="current" placeholder="Current (A)">
+                <input type="number" id="voltage" placeholder="Voltage (V)">
+                <input type="number" id="speed" placeholder="Travel Speed (mm/min)">
+                <input type="number" id="efficiency" placeholder="Efficiency (%)">
+                <button onclick="calculate()">CALCULATE</button>
+            </div>
+            <div class="output-section">
+                <h2>Heat Input:</h2>
+                <p id="result">-- kJ/mm</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
